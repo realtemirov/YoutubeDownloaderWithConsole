@@ -16,7 +16,7 @@ namespace YoutubeDownloaderWithConsole
             var videos = allVidoes.FirstOrDefault(x => (x.Resolution == 720) && (x.Format == VideoFormat.Mp4));
 
             byte[] bytres = videos.GetBytes();
-            File.WriteAllBytes("d:\\Jahongir\\" + videos.FullName + "-" + videos.Resolution + ".mp4", bytres);
+            File.WriteAllBytes("c:\\" + videos.FullName + "-" + videos.Resolution + ".mp4", bytres);
         }
     }
 }
